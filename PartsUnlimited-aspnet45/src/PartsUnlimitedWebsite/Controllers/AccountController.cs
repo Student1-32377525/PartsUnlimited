@@ -8,6 +8,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using PartsUnlimited.Models;
 
+//Testing automatic reviewer policy
+
 namespace PartsUnlimited.Controllers
 {
     [Authorize]
@@ -28,6 +30,8 @@ namespace PartsUnlimited.Controllers
                 return HttpContext.GetOwinContext().GetUserManager<UserManager<ApplicationUser>>();
             }
         }
+
+        
 
         //
         // GET: /Account/Login
